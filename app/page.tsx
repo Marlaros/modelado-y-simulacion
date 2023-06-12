@@ -19,15 +19,15 @@ export default function Home() {
   const renderMethod = () => {
     switch(method){
       case Method.rectangulos:
-          return <Rectangulos />
+        return <Rectangulos />
       case Method.trapecios:
-          return <Trapecios />
+        return <Trapecios />
       case Method.simpsons:
-          return <Simpsons />
+        return <Simpsons />
       case Method.montecarlo:
-          return <Montecarlo />
+        return <Montecarlo />
       default:
-          return <>Some method</>
+        return <>Some method</>
     }
 }
 
@@ -39,30 +39,30 @@ export default function Home() {
       <div className="m-6 flex-2 font-bold font-black text-2xl ">
         Cáclulo de Integrales - Métodos de Aproximación
       </div>
-      <div className="m-4 flex-2 flex flex-row items-center justify-center" >
+      <div className="m-4 flex-2 flex flex-row flex-wrap items-center justify-center" >
         <button 
-          className="m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
+          className="flex-1 m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
           onClick={() => setMethod(Method.rectangulos)}
           style={{boxShadow: '2px 3px 2px 3px rgba(0,0,0,0.11)', borderRadius: '4%', minHeight: '50px'}}
         >
           Rectángulos
         </button>
         <button  
-          className="m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
+          className="flex-1 m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
           onClick={() => setMethod(Method.trapecios)}
           style={{boxShadow: '2px 3px 2px 3px rgba(0,0,0,0.11)', borderRadius: '4%', minHeight: '50px'}}
         >
           Trapecios
         </button>
         <button  
-          className="m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
+          className="flex-1 m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
           onClick={() => setMethod(Method.simpsons)}
           style={{boxShadow: '2px 3px 2px 3px rgba(0,0,0,0.11)', borderRadius: '4%', minHeight: '50px'}}
         >
           Simpsons
         </button>
         <button  
-          className="m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
+          className="flex-1 m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
           onClick={() => setMethod(Method.montecarlo)}
           style={{boxShadow: '2px 3px 2px 3px rgba(0,0,0,0.11)', borderRadius: '4%', minHeight: '50px'}}
         >

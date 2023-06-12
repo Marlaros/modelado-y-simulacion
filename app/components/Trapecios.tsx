@@ -26,7 +26,7 @@ const Trapecios = () => {
                     />
                 </div>
                 <div className="min-w-50 m-3">
-                    <label className="m-1" htmlFor="intervalos">Numero de Intervalos: {'h '}</label>
+                    <label className="m-1" htmlFor="intervalos">Numero de Intervalos: {'n '}</label>
                     <input 
                         type="text"
                         name="funcion"

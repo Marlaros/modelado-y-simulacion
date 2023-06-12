@@ -26,7 +26,7 @@ const Simpsons = () => {
                     />
                 </div>
                 <div className="min-w-50 m-3">
-                    <label className="m-1" htmlFor="intervalos">Numero de Intervalos: {'h (par) '}</label>
+                    <label className="m-1" htmlFor="intervalos">Numero de Intervalos: {'n (par) '}</label>
                     <input 
                         type="text"
                         name="funcion"
