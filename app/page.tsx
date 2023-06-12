@@ -2,7 +2,7 @@
 import React, {useState} from "react";
 import Rectangulos from "./components/Rectangulos";
 import Trapecios from "./components/Trapecios";
-import Simpsons from "./components/Simpsons";
+import Simpsons from "./components/Euler";
 import Montecarlo from "./components/Montecarlo";
 
 enum Method{
@@ -43,28 +43,28 @@ export default function Home() {
         <button 
           className="flex-1 m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
           onClick={() => setMethod(Method.rectangulos)}
-          style={{boxShadow: '2px 3px 2px 3px rgba(0,0,0,0.11)', borderRadius: '4%', minHeight: '50px'}}
+          style={{boxShadow: '2px 3px 2px 3px rgba(0,128,128,0.11)', borderRadius: '4%', minHeight: '50px'}}
         >
           Rectángulos
         </button>
         <button  
           className="flex-1 m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
           onClick={() => setMethod(Method.trapecios)}
-          style={{boxShadow: '2px 3px 2px 3px rgba(0,0,0,0.11)', borderRadius: '4%', minHeight: '50px'}}
+          style={{boxShadow: '2px 3px 2px 3px rgba(0,128,128,0.11)', borderRadius: '4%', minHeight: '50px'}}
         >
           Trapecios
         </button>
         <button  
           className="flex-1 m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
           onClick={() => setMethod(Method.simpsons)}
-          style={{boxShadow: '2px 3px 2px 3px rgba(0,0,0,0.11)', borderRadius: '4%', minHeight: '50px'}}
+          style={{boxShadow: '2px 3px 2px 3px rgba(0,128,128,0.11)', borderRadius: '4%', minHeight: '50px'}}
         >
-          Simpsons
+          Euler
         </button>
         <button  
           className="flex-1 m-6 px-20 bg-teal-400 hover:bg-teal-200 font-bold h-10 text-2xl"
           onClick={() => setMethod(Method.montecarlo)}
-          style={{boxShadow: '2px 3px 2px 3px rgba(0,0,0,0.11)', borderRadius: '4%', minHeight: '50px'}}
+          style={{boxShadow: '2px 3px 2px 3px rgba(0,128,128,0.11)', borderRadius: '4%', minHeight: '50px'}}
         >
           Montecarlo
         </button>
